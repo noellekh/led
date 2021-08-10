@@ -1,9 +1,9 @@
 {% extends 'base.html' %}
 
 {% block content  %}
-<h1>{{ object.title }}</h1>
-<p>{% if object.description %}{{ object.description}}{% else %}coming soon {% endif %}</p>
+<h1>Nom du produits: {{ object.titre }}</h1>
+<p>{% if object.description %}description:  {{ object.description}}{% else %}coming soon {% endif %}</p>
 
-{{object.price}}
+prix: {{object.prix}} €
 {% endblock  %}
 

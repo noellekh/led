@@ -1,6 +1,16 @@
 <nav>
     <ul>
-        <li>Brand</li>
-        <li>Contact</li>
+        <li>
+            <p><a href="{% url 'home' %}">Acceuil</a></p>
+        </li>
+        
+        <li>
+            <p><a href="{% url 'products:product-list' %}">Produits</a></p>
+        </li>
+
+        <li>
+            <p><a href="{% url 'products:product-create' %}">Formulaire</a></p>
+                   
+        </li>
     </ul>
 </nav>
