@@ -5,13 +5,14 @@ class ProductForm(forms.ModelForm):
     class Meta:
         model = Product
         fields = [
-            'title',
+            'titre',
             'description',
-            'price'
+            'prix'
         ]
 class RawProductForm(forms.Form):
-    title = forms.CharField(label="", widget=forms.TimeInput(attrs={"placeholder": "your title"}))
+    title = forms.CharField(label="Titre", widget=forms.TimeInput(attrs={"placeholder": ""}))
     description =  forms.CharField(
+                            label="Déscription",
                             required=False,
                             widget=forms.Textarea(
                             attrs={
